@@ -180,3 +180,22 @@ li:hover {
     line-height: 1.5;
     padding: 30px;
 }
+
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;        /* empilha em telas pequenas */
+        align-items: center;
+    }
+    .profile-flex {
+        flex-direction: column;        /* cartão e sinopse em coluna */
+        gap: 20px;
+    }
+    .profile-content, .profile-sinopse {
+        flex: 0 0 100%;                /* ocupa toda a largura */
+        max-width: none;
+    }
+    .profile-sinopse {
+        text-align: center;            /* centraliza texto */
+    }
+}
