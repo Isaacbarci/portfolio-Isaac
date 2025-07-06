@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .hero-container {
@@ -24,13 +25,11 @@ h1 {
     font-size: 65px;
     text-align: center;
     margin: 10px;
-
 }
 
 nav {
     width: 50%;
     display: none;
-
 }
 
 ul {
@@ -48,7 +47,7 @@ li {
 }
 
 li:hover {
-    color: #D870DB;
+    color: #4A90E2;
 }
 
 .arrows {
@@ -62,319 +61,122 @@ li:hover {
     fill: transparent;
     stroke-width: 1px;
     animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-@-webkit-keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-.arrows path.a1 {
-    animation-delay:  -1s;
-    -webkit-animation-delay:  -1s;
-}
-
-.arrows path.a2 {
-    animation-delay:  -0.5s;
-    -webkit-animation-delay:  -0.5s;
-}
-
-.arrows path.a3 {
-    animation-delay:  0s;
-    -webkit-animation-delay:  0s;
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
 }
 
 .content-container {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 .profile-container {
-    color: #333;
-    height: 120%;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: stretch;  /* faz card acompanhar altura da sinopse */
     background-image: url('./akin-cakiner-xKBmqz66gEs-unsplash.jpg');
     background-size: cover;
+    padding: 40px;
+}
+
+.profile-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .profile-content {
-    width: 30%;
+    flex: 0 0 30%;
+    max-width: 400px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-card {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
-    height: 515px;
     background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    height: 100%;  /* faz o card acompanhar a altura da sinopse */
 }
 
 .profile-image {
-    width: 100px;
-    height: auto;
+    width: 120px;
     border-radius: 50%;
-    border: 4px solid #D870DB;
+    border: 4px solid #4A90E2;
 }
 
 .name-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 21px;
+    font-size: 24px;
     margin-top: 15px;
 }
 
 .profile-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .profile-button {
-    width: 150px;
-    height: 30px;
-    border-radius: 15px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
     border: none;
-    background-color: #D870DB;
+    background-color: #4A90E2;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    margin-top: 35px;
+    margin-top: 20px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-button:hover {
+    transform: scale(1.05);
 }
 
 .divider {
-    width: 40%;
-    border-top: .5px solid #bfbfbf;
-    margin: 15px 0;
+    width: 60%;
+    border-top: 1px solid #bfbfbf;
+    margin: 20px 0;
 }
 
 .icons-container {
     display: flex;
-    width:110%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .icon-item {
-    width: 95px;
-    height: 65px;
-
+    width: 100px;
+    height: auto;
 }
 
 .profile-sinopse {
-    width: 330px;
-    font-family: 'Oswald', sans-serif;
+    flex: 0 0 70%;
     color: #fff;
-    font-size: 17.76px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 30px;
 }
-
-
-
-
-
-@media (max-width: 768px){
-
-    .hero-container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background-image: url('./nubelson-fernandes-iE71-TMrrkE-unsplash (2).jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 10px;
-    }
-    
-    h1 {
-        font-family: 'Oswald', sans-serif;
-        color: #fff;
-        font-size: 65px;
-        text-align: center;
-        margin: 10px;
-    
-    }
-    
-    nav {
-        width: 100%;
-        display: none;
-    
-    }
-    
-    ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        width: 700px;
-    }
-    
-    li {
-        font-family: 'Oswald', sans-serif;
-        font-size: 21px;
-        color: #fff;
-        cursor: pointer;
-    }
-    
-    li:hover {
-        color: #D870DB;
-    }
-    
-    .arrows {
-        width: 60px;
-        height: 172px;
-        bottom: 20px;
-    }
-    
-    .arrows path {
-        stroke: #fff;
-        fill: transparent;
-        stroke-width: 1px;
-        animation: arrow 2s infinite;
-        -webkit-animation: arrow 2s infinite;
-    }
-    
-    @keyframes arrow
-    {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
-    }
-    
-    @-webkit-keyframes arrow
-    {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
-    }
-    
-    .arrows path.a1 {
-        animation-delay:  -1s;
-        -webkit-animation-delay:  -1s;
-    }
-    
-    .arrows path.a2 {
-        animation-delay:  -0.5s;
-        -webkit-animation-delay:  -0.5s;
-    }
-    
-    .arrows path.a3 {
-        animation-delay:  0s;
-        -webkit-animation-delay:  0s;
-    }
-    
-    .content-container {
-        height: 100vh;
-        background-color: #333;
-    }
-    
-    .profile-container {
-        color: #333;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('./akin-cakiner-xKBmqz66gEs-unsplash.jpg');
-        background-size: cover;
-    }
-    
-    .profile-content {
-        width: 100%;
-    }
-    
-    .profile-card {
-        display: flex;
-        width: 130px;
-        height: auto;
-        padding: 10px;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    
-    }
-    
-    .profile-image {
-        width: 100px;
-        height: auto;
-        border-radius: 50%;
-        border: 4px solid #D870DB;
-    }
-    
-    .name-text {
-        font-family: 'Oswald', sans-serif;
-        font-size: 21px;
-        margin-top: 15px;
-    }
-    
-    .profile-text {
-        font-family: 'Oswald', sans-serif;
-        font-size: 14px;
-        text-align: center;
-        width: auto;
-        margin-top: 5px;
-    }
-    
-    .profile-button {
-        width: 150px;
-        height: 30px;
-        border-radius: 15px;
-        border: none;
-        background-color: #D870DB;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        margin-top: 35px;
-        cursor: pointer;
-    }
-    
-    .divider {
-        width: 40%;
-        border-top: .5px solid #bfbfbf;
-        margin: 15px 0;
-    }
-    
-    .icons-container {
-        display: flex;
-        width:110%;
-        justify-content: space-around;
-    }
-    
-    .icon-item {
-        width: 95px;
-        height: 65px;
-    
-    }
-    
-    .profile-sinopse {
-        width: auto;
-        height: auto;
-        text-align: left;
-        font-size: 16PX;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-margin-left: 5px;
-    }
-
-
-}
-
