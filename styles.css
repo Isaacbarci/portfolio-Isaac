@@ -205,40 +205,49 @@ li:hover {
     html, body {
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 100vh;
+        width: 100vw;
         background-color: #000;
+        display: flex;
+        flex-direction: column;
     }
 
     .content-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: rgba(0, 0, 0, 0.9);
         padding: 0;
-        margin: 0;
-        background-color: rgba(0, 0, 0, 0.85);
-        display: block;
     }
 
     .profile-container {
+        flex: 1;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: stretch;
-        background: none;
         padding: 0;
         margin: 0;
+        background: none;
     }
 
     .profile-content {
         width: 100%;
-        padding: 15px 15px 0 15px;
+        padding: 20px 15px 0 15px;
+        flex-grow: 0;
     }
 
     .profile-card {
         width: 100%;
         border-radius: 12px;
-        box-shadow: none;
         background-color: #fff;
-        margin: 0 auto 20px auto;
+        box-shadow: none;
+        margin-bottom: 10px;
     }
 
     .profile-sinopse {
-        width: 100%;
+        flex-grow: 1;
         padding: 0 15px 30px 15px;
         font-size: 15px;
         line-height: 1.6;
@@ -249,24 +258,10 @@ li:hover {
 
     .profile-button {
         width: 100%;
-        max-width: 100%;
         margin-top: 15px;
-    }
-
-    .profile-text {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-
-    .name-text {
-        font-size: 22px;
     }
 
     .icon-item {
         width: 80px;
-    }
-
-    .content-container > *:last-child {
-        margin-bottom: 0 !important;
     }
 }
