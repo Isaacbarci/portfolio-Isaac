@@ -182,44 +182,7 @@ li:hover {
 }
 
 
-
 @media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .profile-content {
-        width: 100%;
-    }
-
-    .profile-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .profile-sinopse {
-        order: 2;
-        width: 100%;
-        padding: 20px;
-        color: #fff;
-        text-align: left;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .profile-button {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .profile-text, .name-text {
-        text-align: center;
-    }
-
-    .icon-item {
-        width: 80px;
-    }
-
     .profile-container {
         flex-direction: column;        /* empilha em telas pequenas */
         align-items: center;
