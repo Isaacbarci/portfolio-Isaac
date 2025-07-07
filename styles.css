@@ -262,3 +262,25 @@ li:hover {
         width: 80px;
     }
 }
+
+
+@media (max-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+
+    .content-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .profile-card {
+        margin-top: 20px;
+    }
+
+    .profile-sinopse {
+        margin-bottom: 40px;
+    }
+}
