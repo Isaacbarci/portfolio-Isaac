@@ -202,16 +202,18 @@ li:hover {
 
 
 @media (max-width: 768px) {
-    body {
+    html, body {
         margin: 0;
         padding: 0;
+        height: auto;
         background-color: #000;
     }
 
     .content-container {
-        flex-direction: column;
-        padding: 20px 10px;
-        background-color: rgba(0, 0, 0, 0.8);
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        display: block;
     }
 
     .profile-container {
@@ -219,28 +221,30 @@ li:hover {
         align-items: stretch;
         background: none;
         padding: 0;
+        margin: 0;
     }
 
     .profile-content {
         width: 100%;
-        padding: 20px 10px;
+        padding: 15px 15px 0 15px;
     }
 
     .profile-card {
         width: 100%;
         border-radius: 12px;
         box-shadow: none;
-        margin-bottom: 20px;
         background-color: #fff;
+        margin: 0 auto 20px auto;
     }
 
     .profile-sinopse {
         width: 100%;
-        padding: 20px;
+        padding: 0 15px 30px 15px;
         font-size: 15px;
         line-height: 1.6;
         color: #fff;
         text-align: left;
+        margin: 0;
     }
 
     .profile-button {
@@ -261,26 +265,8 @@ li:hover {
     .icon-item {
         width: 80px;
     }
-}
 
-
-@media (max-width: 768px) {
-    html, body {
-        height: 100%;
-    }
-
-    .content-container {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .profile-card {
-        margin-top: 20px;
-    }
-
-    .profile-sinopse {
-        margin-bottom: 40px;
+    .content-container > *:last-child {
+        margin-bottom: 0 !important;
     }
 }
