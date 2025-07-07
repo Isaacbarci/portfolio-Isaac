@@ -184,34 +184,9 @@ li:hover {
 
 @media (max-width: 768px) {
     .profile-container {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 20px;
+        flex-direction: column;        /* empilha em telas pequenas */
+        align-items: center;
     }
-
-    .profile-flex {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .profile-content, .profile-sinopse {
-        flex: 0 0 100%;
-        max-width: 100%;
-        text-align: left;
-        padding: 0;
-    }
-
-    .profile-sinopse {
-        padding: 10px;
-        word-break: break-word;
-        order: 2;
-    }
-
-    .profile-content {
-        order: 1;
-    }
-}
     .profile-flex {
         flex-direction: column;        /* cartão e sinopse em coluna */
         gap: 20px;
