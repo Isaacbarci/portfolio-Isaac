@@ -205,6 +205,11 @@ li:hover {
     .profile-sinopse {
         padding: 10px;
         word-break: break-word;
+        order: 2;
+    }
+
+    .profile-content {
+        order: 1;
     }
 }
     .profile-flex {
