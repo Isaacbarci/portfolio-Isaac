@@ -182,7 +182,44 @@ li:hover {
 }
 
 
+
 @media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profile-content {
+        width: 100%;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile-sinopse {
+        order: 2;
+        width: 100%;
+        padding: 20px;
+        color: #fff;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-text, .name-text {
+        text-align: center;
+    }
+
+    .icon-item {
+        width: 80px;
+    }
+
     .profile-container {
         flex-direction: column;        /* empilha em telas pequenas */
         align-items: center;
@@ -197,69 +234,5 @@ li:hover {
     }
     .profile-sinopse {
         text-align: center;            /* centraliza texto */
-    }
-}
-
-
-@media (max-width: 768px) {
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color: #000;
-    }
-
-    .content-container {
-        display: block;
-        width: 100%;
-        padding: 0;
-        background-color: rgba(0, 0, 0, 0.85);
-    }
-
-    .profile-container {
-        display: block;
-        padding: 0;
-        background: none;
-        width: 100%;
-    }
-
-    .profile-content {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .profile-card {
-        width: 100%;
-        background-color: #fff;
-        border-radius: 12px;
-        box-shadow: none;
-        margin-bottom: 20px;
-    }
-
-    .profile-sinopse {
-        width: 100%;
-        padding: 20px;
-        color: #fff;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: left;
-        background-color: transparent;
-    }
-
-    .profile-button {
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    .icon-item {
-        width: 80px;
-    }
-
-    .name-text {
-        font-size: 22px;
-    }
-
-    .profile-text {
-        font-size: 15px;
     }
 }
