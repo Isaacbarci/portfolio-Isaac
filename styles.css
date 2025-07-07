@@ -202,53 +202,64 @@ li:hover {
 
 
 @media (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #000;
+    }
+
     .content-container {
-        flex-direction: column;
-        padding: 10px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.85);
     }
 
     .profile-container {
-        flex-direction: column;
-        align-items: stretch;
+        display: block;
         padding: 0;
         background: none;
+        width: 100%;
     }
 
     .profile-content {
         width: 100%;
-        padding: 15px;
+        padding: 20px;
     }
 
     .profile-card {
         width: 100%;
-        margin-bottom: 20px;
+        background-color: #fff;
         border-radius: 12px;
+        box-shadow: none;
+        margin-bottom: 20px;
     }
 
     .profile-sinopse {
-        order: 2;
         width: 100%;
         padding: 20px;
-        font-size: 15px;
-        line-height: 1.6;
         color: #fff;
+        font-size: 16px;
+        line-height: 1.6;
         text-align: left;
+        background-color: transparent;
     }
 
     .profile-button {
         width: 100%;
-        max-width: 100%;
+        margin-top: 15px;
     }
 
-    .profile-text {
-        font-size: 15px;
+    .icon-item {
+        width: 80px;
     }
 
     .name-text {
         font-size: 22px;
     }
 
-    .icon-item {
-        width: 80px;
+    .profile-text {
+        font-size: 15px;
     }
 }
