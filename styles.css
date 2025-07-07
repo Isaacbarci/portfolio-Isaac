@@ -195,45 +195,70 @@ li:hover {
         flex: 0 0 100%;                /* ocupa toda a largura */
         max-width: none;
     }
-    
+    .profile-sinopse {
+        text-align: center;            /* centraliza texto */
+    }
 }
 
 
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
     }
 
     .content-container {
-        padding: 20px 10px;
         flex-direction: column;
+        padding: 20px 10px;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .profile-container {
         flex-direction: column;
         align-items: stretch;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.6);
-        background-image: none;
+        background: none;
+        padding: 0;
+    }
+
+    .profile-content {
+        width: 100%;
+        padding: 20px 10px;
     }
 
     .profile-card {
         width: 100%;
-        margin-bottom: 20px;
-        box-shadow: none;
         border-radius: 12px;
+        box-shadow: none;
+        margin-bottom: 20px;
+        background-color: #fff;
     }
 
     .profile-sinopse {
-        font-size: 16px;
-        line-height: 1.6;
+        width: 100%;
         padding: 20px;
+        font-size: 15px;
+        line-height: 1.6;
         color: #fff;
         text-align: left;
     }
 
     .profile-button {
         width: 100%;
-        max-width: 250px;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .profile-text {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .name-text {
+        font-size: 22px;
+    }
+
+    .icon-item {
+        width: 80px;
     }
 }
